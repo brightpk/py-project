@@ -1,5 +1,4 @@
 from flask import escape
-from py_project.skeleton import greeting
 
 def hello_http(request):
     """HTTP Cloud Function.
@@ -13,6 +12,8 @@ def hello_http(request):
     """
     request_json = request.get_json(silent=True)
     request_args = request.args
+
+    print('hello_http')
 
     if request_json and 'name' in request_json:
         name = request_json['name']
