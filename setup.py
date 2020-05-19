@@ -21,3 +21,13 @@ except VersionConflict:
 
 if __name__ == "__main__":
     setup(use_pyscaffold=True)
+
+setup(name='py-project',
+      version='0.1',
+      description='Sample of packaging python project',
+      url='https://github.com/brightpk/py-project',
+      author='Bright Phakamad',
+      author_email='bright@example.com',
+      license='BrightPK',
+      packages=['py_project'],
+      zip_safe=False)
